@@ -1,28 +1,51 @@
+/* -----------------------------------------------------------
+   GLOBAL RESET & BASE STYLING
+   - Removes default spacing
+   - Applies consistent box-sizing
+   - Sets global font
+----------------------------------------------------------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
+/* -----------------------------------------------------------
+   MAIN PAGE CONTAINER
+   - Full height layout
+   - Light background tint
+   - Centers calculator box
+----------------------------------------------------------- */
 .container {
   min-height: 100vh;
-  background: linear-gradient(135deg, #1a1a1a, #2c3e50);
+  background-color: rgb(206, 220, 241, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
 }
 
+/* -----------------------------------------------------------
+   CALCULATOR WRAPPER
+   - Rounded card-like container
+   - Shadow for depth
+   - Max width for readability
+----------------------------------------------------------- */
 .calculator {
   background: rgba(255, 255, 255, 0.95);
-  border-radius: 20px;
+  border-radius: 40px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
   width: 100%;
   max-width: 800px;
   overflow: hidden;
 }
 
+/* -----------------------------------------------------------
+   HEADER STYLING
+   - Dark theme header section
+   - Title + Subtitle
+----------------------------------------------------------- */
 .calculator-header {
   background: #2c3e50;
   padding: 30px;
@@ -37,9 +60,14 @@
 
 .subtitle {
   color: #a0aec0;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
+/* -----------------------------------------------------------
+   BODY LAYOUT
+   - Two-column grid for inputs + results
+   - Gap for clean spacing
+----------------------------------------------------------- */
 .calculator-body {
   padding: 30px;
   display: grid;
@@ -47,11 +75,21 @@
   gap: 30px;
 }
 
+/* -----------------------------------------------------------
+   INPUT SECTION
+   - Vertical form layout
+   - Right divider for structure
+----------------------------------------------------------- */
 .input-section {
   padding-right: 30px;
-  border-right: 1px solid #e2e8f0;
+  border-right: 1.5px solid #e2e8f0;
 }
 
+/* -----------------------------------------------------------
+   INPUT GROUPS
+   - Label + input pair
+   - Icon inside input field
+----------------------------------------------------------- */
 .input-group {
   margin-bottom: 20px;
   position: relative;
@@ -74,12 +112,14 @@
   transition: all 0.3s ease;
 }
 
+/* Highlight input on focus */
 .input-group input:focus {
   outline: none;
-  border-color: #2c3e50;
-  box-shadow: 0 0 0 3px rgba(44, 62, 80, 0.1);
+  border-color: rgb(44, 62, 80);
+  box-shadow: 0 0 0 3px rgba(44, 62, 80, 0.5);
 }
 
+/* Icon inside input box */
 .input-icon {
   position: absolute;
   right: 15px;
@@ -87,6 +127,11 @@
   color: #718096;
 }
 
+/* -----------------------------------------------------------
+   SUBMIT BUTTON
+   - Dark theme
+   - Subtle hover lift effect
+----------------------------------------------------------- */
 button {
   width: 100%;
   padding: 15px;
@@ -108,6 +153,10 @@ button:hover {
   transform: translateY(-2px);
 }
 
+/* -----------------------------------------------------------
+   RESULT SECTION
+   - Grid layout for output values
+----------------------------------------------------------- */
 .results {
   padding: 20px;
 }
@@ -118,11 +167,13 @@ button:hover {
   font-size: 1.5rem;
 }
 
+/* Grid for each result card */
 .result-grid {
   display: grid;
   gap: 20px;
 }
 
+/* Individual result card */
 .result-item {
   background: #f7fafc;
   padding: 20px;
@@ -144,6 +195,10 @@ button:hover {
   font-weight: bold;
 }
 
+/* -----------------------------------------------------------
+   RESPONSIVE DESIGN
+   - Single column layout on tablets/phones
+----------------------------------------------------------- */
 @media (max-width: 768px) {
   .calculator-body {
     grid-template-columns: 1fr;
