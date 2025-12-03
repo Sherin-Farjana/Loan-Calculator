@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const totalPayment = document.getElementById("total");
   const totalInterestPayment = document.getElementById("totalInterest");
 
-  /**
+  /*
    * Main function to calculate loan details:
    * - Monthly Payment
    * - Total Payment

@@ -4,6 +4,12 @@ A modern, responsive **loan calculator** built using **HTML5**, **CSS3**, and **
 
 ---
 
+## Live Demo
+
+**https://sherin-loan-calculator.netlify.app/**
+
+---
+
 ## Project Overview
 
 This project is a **smart loan calculator** that emphasizes clarity, usability, and instant feedback.
@@ -50,26 +56,6 @@ Loan-Calculator/
 ├── script.js          # JavaScript logic file
 └── README.md          # Project documentation
 ```
-
----
-
-## Getting Started
-
-### 1️⃣ Clone the repository
-
-```bash
-git clone https://github.com/Sherin-Farjana/Loan-Calculator.git
-```
-
-### 2️⃣ Open the project folder
-
-```bash
-cd Loan-calculator
-```
-
-### 3️⃣ Run the project
-
-Simply open `index.html` in your browser, or use **Live Server** in VS Code for real-time updates.
 
 ---
 

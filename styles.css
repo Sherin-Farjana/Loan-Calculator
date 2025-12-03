@@ -1,9 +1,4 @@
-/* -----------------------------------------------------------
-   GLOBAL RESET & BASE STYLING
-   - Removes default spacing
-   - Applies consistent box-sizing
-   - Sets global font
------------------------------------------------------------ */
+/* GLOBAL RESET & BASE STYLING */
 * {
   margin: 0;
   padding: 0;
@@ -11,12 +6,7 @@
   font-family: "Quicksand", sans-serif;
 }
 
-/* -----------------------------------------------------------
-   MAIN PAGE CONTAINER
-   - Full height layout
-   - Light background tint
-   - Centers calculator box
------------------------------------------------------------ */
+/* MAIN PAGE CONTAINER */
 .container {
   min-height: 100vh;
   background-color: rgb(206, 220, 241, 0.3);
@@ -26,12 +16,7 @@
   padding: 20px;
 }
 
-/* -----------------------------------------------------------
-   CALCULATOR WRAPPER
-   - Rounded card-like container
-   - Shadow for depth
-   - Max width for readability
------------------------------------------------------------ */
+/* CALCULATOR WRAPPER */
 .calculator {
   background: rgba(255, 255, 255, 0.95);
   border-radius: 40px;
@@ -41,11 +26,7 @@
   overflow: hidden;
 }
 
-/* -----------------------------------------------------------
-   HEADER STYLING
-   - Dark theme header section
-   - Title + Subtitle
------------------------------------------------------------ */
+/* HEADER STYLING */
 .calculator-header {
   background: #2c3e50;
   padding: 30px;
@@ -63,11 +44,7 @@
   font-size: 1.2rem;
 }
 
-/* -----------------------------------------------------------
-   BODY LAYOUT
-   - Two-column grid for inputs + results
-   - Gap for clean spacing
------------------------------------------------------------ */
+/*  BODY LAYOUT */
 .calculator-body {
   padding: 30px;
   display: grid;
@@ -75,21 +52,13 @@
   gap: 30px;
 }
 
-/* -----------------------------------------------------------
-   INPUT SECTION
-   - Vertical form layout
-   - Right divider for structure
------------------------------------------------------------ */
+/* INPUT SECTION */
 .input-section {
   padding-right: 30px;
   border-right: 1.5px solid #e2e8f0;
 }
 
-/* -----------------------------------------------------------
-   INPUT GROUPS
-   - Label + input pair
-   - Icon inside input field
------------------------------------------------------------ */
+/* INPUT GROUPS */
 .input-group {
   margin-bottom: 20px;
   position: relative;
@@ -127,11 +96,7 @@
   color: #718096;
 }
 
-/* -----------------------------------------------------------
-   SUBMIT BUTTON
-   - Dark theme
-   - Subtle hover lift effect
------------------------------------------------------------ */
+/* SUBMIT BUTTON */
 button {
   width: 100%;
   padding: 15px;
@@ -153,10 +118,7 @@ button:hover {
   transform: translateY(-2px);
 }
 
-/* -----------------------------------------------------------
-   RESULT SECTION
-   - Grid layout for output values
------------------------------------------------------------ */
+/* RESULT SECTION */
 .results {
   padding: 20px;
 }
@@ -195,10 +157,7 @@ button:hover {
   font-weight: bold;
 }
 
-/* -----------------------------------------------------------
-   RESPONSIVE DESIGN
-   - Single column layout on tablets/phones
------------------------------------------------------------ */
+/* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
   .calculator-body {
     grid-template-columns: 1fr;
